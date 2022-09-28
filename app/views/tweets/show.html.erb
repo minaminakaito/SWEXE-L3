@@ -1,0 +1,12 @@
+<p>
+<strong>メッセージ:</strong>
+<%= @tweet.message %>
+</p>
+<p>
+<strong>日時:</strong>
+<%= @tweet.tdate %>
+</p>
+<strong>経過分数:</strong>
+<%= Time.current - @tweet.tdate %>
+</p>
+<%= link_to '戻る', '/' %>
